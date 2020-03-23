@@ -113,11 +113,10 @@ public class MyLinkedList {
         while (cur != null) {
             if (cur.data == key) {
                 prev.next = cur.next;
-                cur = cur.next;
             } else {
                 prev = prev.next;
-                cur = cur.next;
             }
+            cur = cur.next;
         }
         if (this.head.data == key) {
             this.head = this.head.next;
@@ -135,6 +134,7 @@ public class MyLinkedList {
         return count;
     }
 
+    //打印单链表的值
     public void display() {
         Node cur = this.head;
         while (cur != null) {
@@ -144,7 +144,9 @@ public class MyLinkedList {
         System.out.println();
     }
 
+    //删除单链表
     public void clear() {
 
     }
 }
+

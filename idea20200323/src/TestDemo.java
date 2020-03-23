@@ -7,14 +7,14 @@ public class TestDemo {
         myLinkedList.addFirst(6);
         myLinkedList.addIndex(2,7);
         myLinkedList.display();
-        System.out.println(myLinkedList.contains(4));
+        System.out.println(myLinkedList.contains(7));
         System.out.println(myLinkedList.contains(17));
         System.out.println(myLinkedList.size());
-        myLinkedList.remove(4);
+        myLinkedList.remove(7);
         myLinkedList.display();
         myLinkedList.addFirst(2);
         myLinkedList.addFirst(2);
-        myLinkedList.addFirst(2);
+        myLinkedList.addLast(2);
         myLinkedList.display();
         myLinkedList.removeAllKey(2);
         myLinkedList.display();
